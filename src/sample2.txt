@@ -1,0 +1,48 @@
+set
+
+0x09 10011100
+0x0A 00110101
+0x0B 01100111
+0x0C 00010101
+0x0D 00000110
+
+endset
+
+LDA 0x09
+ADD 0x0A
+OUT
+LDA 0x0B
+SUB 0x0C
+OUT
+SUB 0x0D
+OUT
+HLT
+
+output:
+0100 1100 (final output)
+
+commands:
+LDA = 0000
+ADD = 0001
+SUB = 0010
+OUT = 1110
+HLT = 1111
+
+
+address:
+R0 | 00h = 0000 1001
+R1 | 01h = 0001 1010
+R2 | 02h = 1110
+R3 | 03h = 0000 1011
+R4 | 04h = 0010 1100
+R5 | 05h = 1110
+R6 | 06h = 0010 1101
+R7 | 07h = 1110
+R8 | 08h = 1111
+R9 | 09h = 1001 1100
+RA | 0Ah = 0011 0101
+RB | 0Bh = 0110 0111
+RC | 0Ch = 0001 0101
+RD | 0Dh = 0000 0110
+RE | 0Eh = 
+RF | 0Fh = 

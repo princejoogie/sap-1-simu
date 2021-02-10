@@ -1,0 +1,12 @@
+set
+
+0x0E 00000001
+0x0E 00000010
+
+endset
+
+LDA 0x0F
+ADD 0x0E
+OUT
+HLT
+
